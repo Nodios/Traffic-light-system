@@ -1,0 +1,16 @@
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\CSharpGraphics\CSharpGraphics\bin\Debug\CSharpGraphics.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\CSharpGraphics\CSharpGraphics\bin\Debug\CSharpGraphics.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\CSharpGraphics\CSharpGraphics\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\CSharpGraphics\CSharpGraphics\obj\Debug\CSharpGraphics.Form1.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\CSharpGraphics\CSharpGraphics\obj\Debug\CSharpGraphics.Properties.Resources.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\CSharpGraphics\CSharpGraphics\obj\Debug\CSharpGraphics.csproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\CSharpGraphics\CSharpGraphics\obj\Debug\CSharpGraphics.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\CSharpGraphics\CSharpGraphics\obj\Debug\CSharpGraphics.pdb
+D:\Users\Dino\Documents\Visual Studio 2013\Projects\CSharpGraphics\CSharpGraphics\obj\Debug\CSharpGraphics.exe
+D:\Users\Dino\Documents\Visual Studio 2013\Projects\CSharpGraphics\CSharpGraphics\obj\Debug\CSharpGraphics.pdb
+D:\Users\Dino\Documents\Visual Studio 2013\Projects\CSharpGraphics\CSharpGraphics\obj\Debug\CSharpGraphics.csprojResolveAssemblyReference.cache
+D:\Users\Dino\Documents\Visual Studio 2013\Projects\CSharpGraphics\CSharpGraphics\obj\Debug\CSharpGraphics.Form1.resources
+D:\Users\Dino\Documents\Visual Studio 2013\Projects\CSharpGraphics\CSharpGraphics\obj\Debug\CSharpGraphics.Properties.Resources.resources
+D:\Users\Dino\Documents\Visual Studio 2013\Projects\CSharpGraphics\CSharpGraphics\obj\Debug\CSharpGraphics.csproj.GenerateResource.Cache
+D:\Users\Dino\Documents\Visual Studio 2013\Projects\CSharpGraphics\CSharpGraphics\bin\Debug\CSharpGraphics.exe
+D:\Users\Dino\Documents\Visual Studio 2013\Projects\CSharpGraphics\CSharpGraphics\bin\Debug\CSharpGraphics.pdb
