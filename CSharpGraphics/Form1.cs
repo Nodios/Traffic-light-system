@@ -17,7 +17,7 @@ namespace CSharpGraphics
         #region Properties
         private int timeRed=1, timeYellow=1, timeGreen=1;
         private int lightColor { get; set; }
-
+        private int pedLightColor { get; set; }
         /// <summary>
         /// Used to obtain previous state of traffic light for correct changes between R-Y-G to G-Y-R
         /// 1: Red light
@@ -53,6 +53,18 @@ namespace CSharpGraphics
             Rectangle rect22 = new Rectangle(365, 90, 60, 60);
             Rectangle rect33 = new Rectangle(365, 150, 60, 60);
 
+            //Pedestrian traffic light left
+            Rectangle pedRect = new Rectangle(250, 20, 95, 150);
+            e.Graphics.FillRectangle(Brushes.LightGoldenrodYellow, pedRect);
+            Rectangle pedRect1 = new Rectangle(265, 30, 60, 60); //red
+            Rectangle pedRect2 = new Rectangle(265, 90, 60, 60); //green
+
+            //Pedestrian traffic light right
+            Rectangle pedRect10 = new Rectangle(450, 20, 95, 150);
+            e.Graphics.FillRectangle(Brushes.LightGoldenrodYellow, pedRect10);
+            Rectangle pedRect11 = new Rectangle(465, 30, 60, 60); //red
+            Rectangle pedRect22 = new Rectangle(465, 90, 60, 60); //green
+
             switch (lightColor)
             {
                 case 1:
@@ -65,17 +77,38 @@ namespace CSharpGraphics
                     e.Graphics.FillEllipse(Brushes.Black, rect11);
                     e.Graphics.FillEllipse(Brushes.Black, rect22);
                     e.Graphics.FillEllipse(Brushes.Lime, rect33);
+
+                    //Pedestrian left - Red
+                    e.Graphics.FillEllipse(Brushes.Red, pedRect1);
+                    e.Graphics.FillEllipse(Brushes.Black, pedRect2);
+
+                    //Pedestrian right - Green
+                    e.Graphics.FillEllipse(Brushes.Black, pedRect11);
+                    e.Graphics.FillEllipse(Brushes.Lime, pedRect22);
                     break;
                 case 2:
                     //Yellow
-                    e.Graphics.FillEllipse(Brushes.Black, rect1);
+                    if(previousState == 1)
+                        e.Graphics.FillEllipse(Brushes.Red, rect1);
+                    else
+                        e.Graphics.FillEllipse(Brushes.Black, rect1);
                     e.Graphics.FillEllipse(Brushes.Yellow, rect2);
                     e.Graphics.FillEllipse(Brushes.Black, rect3);
 
                     //Second light - Yellow
-                    e.Graphics.FillEllipse(Brushes.Black, rect11);
+                    if(previousState == 3)
+                        e.Graphics.FillEllipse(Brushes.Red, rect11);
+                    else
+                        e.Graphics.FillEllipse(Brushes.Black, rect11);
                     e.Graphics.FillEllipse(Brushes.Yellow, rect22);
                     e.Graphics.FillEllipse(Brushes.Black, rect33);
+
+                    //Pedestrian left - red
+                    e.Graphics.FillEllipse(Brushes.Red, pedRect1);
+                    e.Graphics.FillEllipse(Brushes.Black, pedRect2);
+                    //Pedestrian right - red
+                    e.Graphics.FillEllipse(Brushes.Red, pedRect11);
+                    e.Graphics.FillEllipse(Brushes.Black, pedRect22);
                     break;
                 case 3:
                     //Green
@@ -87,6 +120,14 @@ namespace CSharpGraphics
                     e.Graphics.FillEllipse(Brushes.Red, rect11);
                     e.Graphics.FillEllipse(Brushes.Black, rect22);
                     e.Graphics.FillEllipse(Brushes.Black, rect33);
+
+                    //Pedestrian left - Green
+                    e.Graphics.FillEllipse(Brushes.Black, pedRect1);
+                    e.Graphics.FillEllipse(Brushes.Lime, pedRect2);
+
+                    //Pedestrian right - Red
+                    e.Graphics.FillEllipse(Brushes.Red, pedRect11);
+                    e.Graphics.FillEllipse(Brushes.Black, pedRect22);
                     break;
             }
 

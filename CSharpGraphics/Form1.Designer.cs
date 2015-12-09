@@ -137,7 +137,7 @@
             // 
             this.timeLabel.AutoSize = true;
             this.timeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.timeLabel.Location = new System.Drawing.Point(285, 46);
+            this.timeLabel.Location = new System.Drawing.Point(695, 26);
             this.timeLabel.Name = "timeLabel";
             this.timeLabel.Size = new System.Drawing.Size(24, 25);
             this.timeLabel.TabIndex = 12;
@@ -158,7 +158,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(470, 266);
+            this.ClientSize = new System.Drawing.Size(756, 281);
             this.Controls.Add(this.timeLabel);
             this.Controls.Add(this.numericUpDown3);
             this.Controls.Add(this.numericUpDown2);
