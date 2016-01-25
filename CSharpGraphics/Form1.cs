@@ -88,17 +88,32 @@ namespace CSharpGraphics
             Rectangle rectB33 = new Rectangle(739, 512, 30, 30);
             #endregion
 
-            //Pedestrian traffic light left
-            Rectangle pedRect = new Rectangle(250, 20, 95, 150);
+            #region Horizontal pedestrian light
+            //Left
+            Rectangle pedRect = new Rectangle(400, 480, 75, 40);
             e.Graphics.FillRectangle(Brushes.LightGoldenrodYellow, pedRect);
-            Rectangle pedRect1 = new Rectangle(265, 30, 60, 60); //red
-            Rectangle pedRect2 = new Rectangle(265, 90, 60, 60); //green
+            Rectangle pedRect1 = new Rectangle(440, 485, 30, 30); //red
+            Rectangle pedRect2 = new Rectangle(405, 485, 30, 30); //green
 
-            //Pedestrian traffic light right
-            Rectangle pedRect10 = new Rectangle(150, 20, 95, 150);
+            //Right
+            Rectangle pedRectPR = new Rectangle(775, 120, 75, 40);
+            e.Graphics.FillRectangle(Brushes.LightGoldenrodYellow, pedRectPR);
+            Rectangle pedRectPR1 = new Rectangle(780, 125, 30, 30); //red
+            Rectangle pedRectPR2 = new Rectangle(815, 125, 30, 30); //green
+            #endregion
+
+            #region Vertical pedestrian light
+            //Top
+            Rectangle pedRect10 = new Rectangle(425, 90, 40, 75);
             e.Graphics.FillRectangle(Brushes.LightGoldenrodYellow, pedRect10);
-            Rectangle pedRect11 = new Rectangle(165, 30, 60, 60); //red
-            Rectangle pedRect22 = new Rectangle(165, 90, 60, 60); //green
+            Rectangle pedRect11 = new Rectangle(430, 130, 30, 30); //red
+            Rectangle pedRect22 = new Rectangle(430, 95, 30, 30); //green
+            //Bottom
+            Rectangle pedRectPB10 = new Rectangle(784, 475, 40, 75);
+            e.Graphics.FillRectangle(Brushes.LightGoldenrodYellow, pedRectPB10);
+            Rectangle pedRectPB11 = new Rectangle(789, 480, 30, 30); //red
+            Rectangle pedRectPB22 = new Rectangle(789, 515, 30, 30); //green
+            #endregion
 
             switch (lightColor)
             {
@@ -126,13 +141,24 @@ namespace CSharpGraphics
                     e.Graphics.FillEllipse(Brushes.Lime, rectB33);
                     #endregion
 
-                    //Pedestrian left - Red
+                    #region Pedestrian red - Horizontal
+                    //Left
                     e.Graphics.FillEllipse(Brushes.Red, pedRect1);
                     e.Graphics.FillEllipse(Brushes.Black, pedRect2);
+                    //Right
+                    e.Graphics.FillEllipse(Brushes.Red, pedRectPR1);
+                    e.Graphics.FillEllipse(Brushes.Black, pedRectPR2);
+                    #endregion
 
-                    //Pedestrian right - Green
+                    #region Pedestrian green - vertical
+                    //Top
                     e.Graphics.FillEllipse(Brushes.Black, pedRect11);
                     e.Graphics.FillEllipse(Brushes.Lime, pedRect22);
+                    //Bottom
+                    e.Graphics.FillEllipse(Brushes.Black, pedRectPB11);
+                    e.Graphics.FillEllipse(Brushes.Lime, pedRectPB22);
+                    #endregion
+
                     break;
                 case 2:
                     #region Yellow - Horizontal
@@ -181,12 +207,24 @@ namespace CSharpGraphics
                     e.Graphics.FillEllipse(Brushes.Black, rectB33);
                     #endregion
 
-                    //Pedestrian left - red
+                    #region Pedestrian red/yellow - Horizontal
+                    //Left
                     e.Graphics.FillEllipse(Brushes.Red, pedRect1);
                     e.Graphics.FillEllipse(Brushes.Black, pedRect2);
-                    //Pedestrian right - red
+                    //Right
+                    e.Graphics.FillEllipse(Brushes.Red, pedRectPR1);
+                    e.Graphics.FillEllipse(Brushes.Black, pedRectPR2);
+                    #endregion
+
+                    #region Pedestrian red/yellow - vertical
+                    //Top
                     e.Graphics.FillEllipse(Brushes.Red, pedRect11);
                     e.Graphics.FillEllipse(Brushes.Black, pedRect22);
+                    //Bottom
+                    e.Graphics.FillEllipse(Brushes.Red, pedRectPB11);
+                    e.Graphics.FillEllipse(Brushes.Black, pedRectPB22);
+                    #endregion
+
                     break;
                 case 3:
                     #region Green - Horizontal
@@ -211,13 +249,24 @@ namespace CSharpGraphics
                     e.Graphics.FillEllipse(Brushes.Black, rectB33);
                     #endregion
 
-                    //Pedestrian left - Green
+                    #region Pedestrian green - Horizontal
+                    //Left
                     e.Graphics.FillEllipse(Brushes.Black, pedRect1);
                     e.Graphics.FillEllipse(Brushes.Lime, pedRect2);
+                    //Right
+                    e.Graphics.FillEllipse(Brushes.Black, pedRectPR1);
+                    e.Graphics.FillEllipse(Brushes.Lime, pedRectPR2);
+                    #endregion
 
-                    //Pedestrian right - Red
+                    #region Pedestrian red - vertical
+                    //Top
                     e.Graphics.FillEllipse(Brushes.Red, pedRect11);
                     e.Graphics.FillEllipse(Brushes.Black, pedRect22);
+                    //Bottom
+                    e.Graphics.FillEllipse(Brushes.Red, pedRectPB11);
+                    e.Graphics.FillEllipse(Brushes.Black, pedRectPB22);
+                    #endregion
+
                     break;
             }
 
